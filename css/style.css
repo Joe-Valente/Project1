@@ -25,7 +25,6 @@ body h1 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
   
 #main-navbar {
   position: relative;
@@ -71,7 +70,14 @@ body h1 {
 
 .page3 {
   background-color: rgba(96, 143, 53, 0.61);
-  color:  rgba(77, 77, 77, 0.897);
+  color:  rgba(77, 77, 77, 0.897) !important;
 }
 
-  
+.page3 header #main-navbar #navbar-container ul li a {
+    color:  rgba(77, 77, 77, 0.897);
+}
+
+.page3 header #main-navbar #navbar-container {
+    color:  rgba(77, 77, 77, 0.897);
+    border-color: rgba(77,77,77, 0.987);
+}
