@@ -20,6 +20,10 @@ body h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 200px;
   font-weight: 550;
+  text-decoration: underline;
+  text-shadow: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #main-navbar {
