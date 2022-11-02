@@ -63,8 +63,11 @@ body h1 {
   display: inline-flex;
 }
 
+#navbar-container ul li a:hover {
+  text-decoration: overline underline;
+}
+
 .page1 #resume_text {
-  float: left;
   display: inline-block;
   width: auto;
 }
