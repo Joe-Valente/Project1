@@ -58,7 +58,7 @@ body h1 {
 
 #navbar-container ul li a {
   color: rgb(204, 182, 182);
-  padding: 15% 10%;
+  padding: 15px 20px;
   text-decoration: underline;
   display: inline-flex;
 }
