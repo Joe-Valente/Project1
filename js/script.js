@@ -30,26 +30,3 @@ function initMap() {
 }
 
 window.initMap = initMap;
-
-const slide = document.getElementById("image-track")
-
-window.onmousedown = e => {
-    slide.dataset.mouseDownAt = e.clientX;
-}
-
-window.onmouseup = () => {
-    slide.dataset.mouseDownAt = "0";
-    slide.dataset.prevPercentage = slide.dataset.percentage;
-}
-
-window.onmousemove = e => {
-    if(slide.dataset.mouseDownAt === "0") return;
-
-    const mouseDelta = parseFloat(slide.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-    const percentage = (mouseDelta / maxDelta) * -100,
-        nextPercentage = parseFloat(slide.dataset.prevpercentage) + percentage;
-    slide.dataset.percentage = nextPercentage;
-    slide.style.transform = 'translate(${nextPercentage}%, -50%)';
-
-}
