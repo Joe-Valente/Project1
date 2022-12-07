@@ -126,3 +126,18 @@ body h1 {
   background-color: grey;
 }
 
+@media only screen and (max-width: 1250px) {
+  .page4 {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .page3 {
+    background-color: antiquewhite;
+    color: gold;
+  }
+}
+
